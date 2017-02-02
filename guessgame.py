@@ -16,7 +16,7 @@ while(maxTries <= 0):
     except:
         print('/!\ You should enter a number equal to or greater than 1. Try again!')
 
-print('\n\nOK, Now try to find out my number! It is between 0 and 99.')
+print('\n\nOK, now try to find out my number! It is between 0 and 99.')
 
 # trying to find the number
 while(numberOfTries != maxTries):
@@ -31,17 +31,17 @@ while(numberOfTries != maxTries):
             continue
         if (0<=numberTried & numberTried<=99):
             break
-        print('Invalid! Try a number between 0 and 99 included')
+        print('\nInvalid! Try a number between 0 and 99 included')
 
     # giving hints about the number
     if(numberTried > numberToFind):
-        print('\nAlmost, but NO! The number is smaller')
+        print('\nAlmost, but NO! Try a smaller number')
     elif(numberTried < numberToFind):
         print('\nAlmost, but NO! The number is greater')
     else:
         break
 
-    print('You have '+str(maxTries-numberOfTries)+' Tries left!')
+    print('You have '+str(maxTries-numberOfTries)+' guesses left!')
 
 # result
 if (numberTried == numberToFind):
